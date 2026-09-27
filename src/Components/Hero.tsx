@@ -16,7 +16,7 @@ export function Hero() {
             </div>
             <div className='flex gap-4 '>
                 <button className="btn  rounded-xl py-0 p-7  bg-linear-to-r from-orange-400 via-red-400 to-pink-500">Explores Technologies</button>
-                <button className="btn rounded-xl border p-13 py-2 text-black/80">Learn More</button>
+                <button className="btn border border-gray-300 rounded-xl  p-13 py-2 text-black/80">Learn More</button>
             </div>
             <div></div>
         </section>
