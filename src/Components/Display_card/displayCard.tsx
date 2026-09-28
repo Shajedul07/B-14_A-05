@@ -25,7 +25,7 @@ export function DisplayCard({ card, onAdd, isAdded }: cardProps) {
                         />
                     </div>
 
-                    <div className="">{card.badge}</div>
+                    <div className="border border-black/30 shadow rounded-xl p-1 px-2 bg-gray-300 ">{card.badge}</div>
 
                 </div>
 

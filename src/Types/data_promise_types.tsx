@@ -7,5 +7,6 @@ export interface cardType  {
     "rating": number,
     "difficulty": string,
     "badge": string
+ 
 }
 
