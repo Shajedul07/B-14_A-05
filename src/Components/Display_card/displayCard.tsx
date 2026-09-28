@@ -1,9 +1,15 @@
+
 import type { cardType } from "../../Types/data_promise_types"
+
 
 interface cardProps {
     card: cardType
+    onAdd: (card: cardType) => void
+    isAdded: boolean;
 }
-export function DisplayCard({ card }: cardProps) {
+export function DisplayCard({ card, onAdd, isAdded }: cardProps) {
+
+   
 
     return (
         <div className="card border border-black/20 shadow rounded p-4">
@@ -16,7 +22,7 @@ export function DisplayCard({ card }: cardProps) {
                             src={card.icon}
                             alt="card_image"
                             className="h-10 w-10"
-                            />
+                        />
                     </div>
 
                     <div className="">{card.badge}</div>
@@ -33,7 +39,18 @@ export function DisplayCard({ card }: cardProps) {
                     <p>⭐{card.rating}</p>
                 </div>
 
-                <button className="btn text-white bg-black w-full p-2.5 border rounded-2xl ">Add to Stack</button>
+                <button
+                    onClick={() => onAdd(card)}
+                    disabled={isAdded}  
+                    className={`btn text-white bg-black w-full p-2.5 border rounded-2xl 
+                        ${isAdded
+                            ? "bg-gray-400 text-white cursor-not-allowed"
+                            : "bg-black text-white"
+                        }`} 
+                >
+                    {isAdded ? "Added ✓" : "Add to Stack"}
+                    Add to Stack
+                </button>
             </div>
             {/* Right Side */}
             <h1>Your Stack</h1>
@@ -41,4 +58,3 @@ export function DisplayCard({ card }: cardProps) {
     )
 }
 
-            
