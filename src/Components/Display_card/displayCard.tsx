@@ -52,8 +52,6 @@ export function DisplayCard({ card, onAdd, isAdded }: cardProps) {
                     Add to Stack
                 </button>
             </div>
-            {/* Right Side */}
-            <h1>Your Stack</h1>
         </div>
     )
 }

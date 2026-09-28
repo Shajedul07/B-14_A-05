@@ -3,6 +3,7 @@ import { Explore_the_technologies } from "./Components/explore_the_technologies"
 import { Hero } from "./Components/Hero";
 import { Nav } from "./Components/Nav";
 import type { cardType } from "./Types/data_promise_types";
+import { Footer } from "./Components/Display_card/Footer";
 
 
 export const dataPromise = async():Promise<cardType[]> =>{
@@ -26,6 +27,7 @@ function App(){
     <Suspense fallback ={<div>Please Wait...</div>}>
       <Explore_the_technologies  dataPromise = {dataPromise()} ></Explore_the_technologies>
     </Suspense>
+    <Footer/>
    </>
   )
 }
