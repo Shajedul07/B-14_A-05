@@ -59,6 +59,7 @@ public/
 
 Technology information is stored in:
 
+
 ```text
 public/data.json
 ```
