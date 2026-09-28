@@ -27,6 +27,7 @@ function App(){
     <Suspense fallback ={<div>Please Wait...</div>}>
       <Explore_the_technologies  dataPromise = {dataPromise()} ></Explore_the_technologies>
     </Suspense>
+    
     <Footer/>
    </>
   )

@@ -1,3 +1,5 @@
+import Logo from '../../assets/logo-text.png'
+
 export function Footer() {
     return (
         <footer className="bg-white">
@@ -12,13 +14,9 @@ export function Footer() {
                     <div>
                         <div className="flex items-center gap-2">
 
-                            <div className="bg-purple-500 text-white text-xs font-bold rounded px-1.5 py-1">
-                                DS
-                            </div>
+                           
 
-                            <h2 className="font-semibold">
-                                Dev Stack
-                            </h2>
+                           <img src={Logo} alt="" />
 
                         </div>
 
